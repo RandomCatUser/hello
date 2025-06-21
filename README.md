@@ -17,9 +17,14 @@
 
 <br />
 
+### Home Page
+
+![Portfolio Desktop Demo](./readme-images/op.png "Home")
+
+
 ### Demo Screenshots
 
-![Portfolio Desktop Demo](./readme-images/image.png "Desktop Demo")
+![Portfolio Desktop Demo](./readme-images/image.png "Desktop")
 
 ### Prerequisites
 
