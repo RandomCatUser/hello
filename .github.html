@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Install Git - Guide</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f1117;
+      color: #eaeaea;
+      margin: 0;
+      padding: 2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      user-select: none;
+    }
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Tabs container */
+    .tabs {
+      display: flex;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      user-select: none;
+    }
+    .tab {
+      position: relative;
+      padding: 0.7rem 1.6rem;
+      cursor: pointer;
+      border-radius: 12px;
+      font-weight: 600;
+      color: #9aa3b1;
+      transition: color 0.3s ease;
+    }
+    .tab:hover:not(.active) {
+      color: #4da6ff;
+    }
+    .tab.active {
+      color: #3498db;
+      font-weight: 700;
+    }
+    /* underline animation */
+    .tab.active::after {
+      content: '';
+      position: absolute;
+      left: 10%;
+      right: 10%;
+      bottom: -6px;
+      height: 3px;
+      background: #3498db;
+      border-radius: 3px;
+      animation: underlineSlide 0.4s forwards;
+    }
+    @keyframes underlineSlide {
+      from {
+        width: 0;
+        left: 50%;
+        right: 50%;
+      }
+      to {
+        left: 10%;
+        right: 10%;
+      }
+    }
+
+    /* Content area */
+    .content {
+      max-width: 720px;
+      background: #1a1d29;
+      border: 1px solid #2a2e3c;
+      border-radius: 14px;
+      padding: 1.5rem 2rem;
+      color: #cdd6f4;
+      box-shadow: 0 6px 20px rgba(52, 152, 219, 0.25);
+      min-height: 230px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(12px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    .content.active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    pre {
+      background: #0d0f16;
+      padding: 1rem 1.2rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      color: #8ff;
+      font-size: 1rem;
+      line-height: 1.4;
+      user-select: text;
+      margin: 1rem 0;
+      font-family: Consolas, Monaco, 'Courier New', monospace;
+    }
+    ol {
+      padding-left: 1.4rem;
+      margin: 0;
+    }
+    ol li {
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+    a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    hr {
+      margin: 2.5rem auto;
+      border-color: #2a2e3c;
+      max-width: 720px;
+      width: 100%;
+    }
+
+    /* Button */
+    .btn-home {
+      margin-top: 3rem;
+      background: #3498db;
+      border: none;
+      color: white;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(52, 152, 219, 0.5);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+    .btn-home:hover {
+      background: #2a7ecf;
+      box-shadow: 0 8px 20px rgba(42, 126, 207, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-home" aria-label="Go to Home page" title="Go to Home page">🏠 Home</button>
+  <h1>📦 Git Cli To Accses Our Projects</h1>
+
+  <nav class="tabs" role="tablist" aria-label="Git installation platform tabs">
+    <div class="tab active" role="tab" aria-selected="true" aria-controls="windows" id="tab-windows" tabindex="0" data-tab="windows">🪟 Windows</div>
+    <div class="tab" role="tab" aria-selected="false" aria-controls="macos" id="tab-macos" tabindex="-1" data-tab="macos">🍎 macOS</div>
+    <div class="tab" role="tab" aria-selected="false" aria-controls="linux" id="tab-linux" tabindex="-1" data-tab="linux">🐧 Linux</div>
+  </nav>
+
+  <section id="windows" class="content active" role="tabpanel" aria-labelledby="tab-windows" tabindex="0">
+    <ol>
+      <li>Download Git from <a href="https://git-scm.com/download/win" target="_blank" rel="noopener noreferrer">git-scm.com</a></li>
+      <li>Run the installer. Use default options unless needed.</li>
+      <li>Verify installation by running:
+        <pre>git --version</pre>
+      </li>
+    </ol>
+  </section>
+
+  <section id="macos" class="content" role="tabpanel" aria-labelledby="tab-macos" tabindex="0" hidden>
+    <ol>
+      <li>Install Git via Homebrew:
+        <pre>brew install git</pre>
+      </li>
+      <li>Verify Git:
+        <pre>git --version</pre>
+      </li>
+      <li>Need Homebrew? Get it at <a href="https://brew.sh" target="_blank" rel="noopener noreferrer">brew.sh</a></li>
+    </ol>
+  </section>
+
+  <section id="linux" class="content" role="tabpanel" aria-labelledby="tab-linux" tabindex="0" hidden>
+    <p><strong>Debain Based:</strong></p>
+    <pre>sudo apt update
+sudo apt install git</pre>
+
+    <p><strong>Arch Based:</strong></p>
+    <pre>sudo pacman -S git</pre>
+
+    <p><strong>Fedora Based:</strong></p>
+    <pre>sudo dnf install git</pre>
+
+    <p>Check Git version:</p>
+    <pre>git --version</pre>
+
+    <p>There Will Be Some Errors With Linux Please Read Git Official</p>
+  </section>
+
+  <hr />
+
+  <h2>✅ Done!</h2>
+  <p>You are now ready to use the repository 🚀</p>
+
+  <h2>📁 Did You Know</h2>
+  <p>This Website is hosted using <strong>GitHub</strong></p>
+
+  <pre><strong>Powered By GitHub</strong></pre>
+
+  
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.content');
+    const btnHome = document.querySelector('.btn-home');
+
+    // Tab click handler with accessible focus management
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => activateTab(tab));
+      tab.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          e.preventDefault();
+          let index = Array.from(tabs).indexOf(document.activeElement);
+          if (e.key === 'ArrowRight') {
+            index = (index + 1) % tabs.length;
+          } else {
+            index = (index - 1 + tabs.length) % tabs.length;
+          }
+          tabs[index].focus();
+          activateTab(tabs[index]);
+        }
+      });
+    });
+
+    function activateTab(selectedTab) {
+      tabs.forEach(tab => {
+        const content = document.getElementById(tab.dataset.tab);
+        if (tab === selectedTab) {
+          tab.classList.add('active');
+          tab.setAttribute('aria-selected', 'true');
+          tab.setAttribute('tabindex', '0');
+          content.classList.add('active');
+          content.removeAttribute('hidden');
+        } else {
+          tab.classList.remove('active');
+          tab.setAttribute('aria-selected', 'false');
+          tab.setAttribute('tabindex', '-1');
+          content.classList.remove('active');
+          content.setAttribute('hidden', '');
+        }
+      });
+    }
+
+    // Home button redirects to index.html in same tab
+    btnHome.addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+
+</body>
+</html>

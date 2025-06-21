@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Cat User</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo">Random Cat User</h1>
+      </a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+          <li>
+            <a href="" class="btn btn-primary">GitHub</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/hero-banner.jpg" width="800" height="864" loading="lazy" alt=".bruh"
+              class="img-cover">
+
+            <div class="elem elem-1">
+              <p class="elem-title">02</p>
+
+              <p class="elem-text">Years of Success</p>
+            </div>
+
+            <div class="elem elem-2">
+              <p class="elem-title">40+</p>
+
+              <p class="elem-text">Projects Completed</p>
+            </div>
+
+            <div class="elem elem-3">
+              <ion-icon name="trophy"></ion-icon>
+            </div>
+
+
+          </div>
+
+          <div class="hero-content">
+
+            <h2 class="hero-title">
+              <span>Hello, I'm</span>
+              <strong>Random Cat User</strong> — Source Code Developer
+            </h2>
+
+            <p class="hero-text">
+              I am passionate about building creative, efficient, and user-friendly web applications. With a strong background in modern web technologies, I strive to deliver solutions that make a real difference.
+            </p>
+
+            <div class="btn-group">
+              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
+
+              <a href="#about" class="btn">About Me</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.gif" width="800" height="652" loading="lazy" alt="sudo.file"
+              class="img-cover">
+
+            <img src="./assets/images/absolute-image.gif" width="800" height="717" loading="lazy" alt="blur.ddl"
+              class="abs-img">
+
+            <div class="abs-icon abs-icon-1">
+              <ion-icon name="logo-css3"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-2">
+              <ion-icon name="logo-javascript"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-3">
+              <ion-icon name="logo-angular"></ion-icon>
+            </div>
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">I'm a Developer</p>
+
+            <h2 class="h2 section-title">I Build Applications That Empower People</h2>
+
+            <p class="section-text">
+              My journey as a developer is driven by curiosity and a desire to solve real-world problems. I enjoy transforming ideas into digital products that are both functional and delightful to use.
+            </p>
+
+            <p class="section-text">
+              Whether it's a simple website or a complex web application, I focus on clean code, responsive design, and seamless user experience.
+            </p>
+
+            <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+
+          <p class="section-subtitle">Portfolio</p>
+
+          <h2 class="h2 section-title">My Featured Projects</h2>
+
+          <p class="section-text">
+            Here are some of the projects I've worked on, showcasing my skills in web development and design.
+          </p>
+
+          <ul class="portfolio-list">
+
+            <li>
+              <a href="https://github.com/RandomCatUser/drawacircle" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Draw A Circle</p>
+
+                  <h3 class="h3 card-title">Let's See How You Can Draw A Circle</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/RandomCatUser/Home-Cloud-IP/releases"  class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.gif')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Home Cloud Server</p>
+
+                  <h3 class="h3 card-title">A Cloud Server That Can Run On Any PC</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.gif')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Hugging Ai</p>
+
+                  <h3 class="h3 card-title">A App That Works Like Ai With Hugging</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.gif')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Details</p>
+
+                  <h3 class="h3 card-title">Custom Web Solutions</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="section skills" id="skills">
+        <div class="container">
+
+          <p class="section-subtitle">My Skills</p>
+
+          <h2 class="h2 section-title">Technologies I Use</h2>
+
+          <p class="section-text">
+            I am constantly learning and improving my skills to stay up-to-date with the latest technologies and best practices in web development.
+          </p>
+
+          <ul class="skills-list">
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 95%">
+                <h3 class=" skills-title">Python</h3>
+
+                <data class="skills-data" value="90">90%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 90%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 95%">
+                <h3 class="skills-title">HTML</h3>
+
+                <data class="skills-data" value="95">95%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 95%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 80%">
+                <h3 class="skills-title">JavaScript</h3>
+
+                <data class="skills-data" value="80">80%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 80%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 70%">
+                <h3 class="skills-title">React</h3>
+
+                <data class="skills-data" value="70">70%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 70%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 80%">
+                <h3 class="skills-title">PHP</h3>
+
+                <data class="skills-data" value="80">80%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 80%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 75%">
+                <h3 class="skills-title">CSS</h3>
+
+                <data class="skills-data" value="75">75%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 75%"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact">
+        <div class="container">
+
+          <div class="contact-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+        <p class="card-subtitle" style="text-align: center;">Let's Connect</p>
+
+        <h2 class="h2 section-title" style="text-align: center;">Send Me a Message</h2>
+
+        <div class="wrapper" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+
+          <form action="error.html" class="contact-form" style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 400px;">
+
+            <input type="text" name="name" placeholder="Your Name" required class="contact-input" style="width: 100%;">
+
+            <input type="email" name="email" placeholder="Your Email" required class="contact-input" style="width: 100%;">
+
+            <textarea name="message" placeholder="How can I help you?" required class="contact-input" style="width: 100%;"></textarea>
+
+            <button type="submit" class="btn-submit" style="align-self: center;">Submit Message</button>
+
+          </form>
+
+        </div>
+          </div>
+        </div>
+      </section>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy;  <a href="https://github.com/RandomCatUser/HuggingAI/releases/tag/v1.0" class="copyright-link">RandomCatUser</a>. All Rights Reserved!
+      </p>
+
+      <ul class="footer-list">
+        <li>
+          <a href="data.html#terms-conditions" class="footer-link">Terms & Conditions</a>
+        </li>
+
+        <li>
+          <a href="data.html" class="footer-link">Privacy Policy</a>
+        </li>
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-to-top" data-back-to-top>BACK TO TOP</a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<!-- Loader Spinner -->
+<div id="loaderOverlay" style="position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;background:rgba(30,41,59,0.35);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);">
+  <svg class="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#000"></stop>
+                <stop offset="100%" stop-color="#fff"></stop>
+            </linearGradient>
+            <mask id="mask1">
+                <rect x="0" y="0" width="160" height="160" fill="url(#grad)"></rect>
+            </mask>
+            <mask id="mask2">
+                <rect x="28" y="28" width="104" height="104" fill="url(#grad)"></rect>
+            </mask>
+        </defs>
+        
+        <g>
+            <g class="pl__ring-rotate">
+                <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(223,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+            </g>
+        </g>
+        <g mask="url(#mask1)">
+            <g class="pl__ring-rotate">
+                <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(193,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+            </g>
+        </g>
+        
+        <g>
+            <g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+            </g>
+        </g>
+        <g mask="url(#mask1)">
+            <g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+            </g>
+        </g>
+        
+        <g>
+            <g transform="translate(64,28)">
+                <g class="pl__arrows" transform="rotate(45,16,52)">
+                    <path fill="hsl(3,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+                    <path fill="hsl(223,10%,90%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+                </g>
+            </g>
+        </g>
+        <g mask="url(#mask2)">
+            <g transform="translate(64,28)">
+                <g class="pl__arrows" transform="rotate(45,16,52)">
+                    <path fill="hsl(333,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+                    <path fill="hsl(223,90%,80%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+                </g>
+            </g>
+        </g>
+    </svg>
+</div>
+
+<!-- Centered Modal Notification Card -->
+<div id="macNoticeOverlay" class="mac-notice-overlay" style="display:none;">
+  <div class="mac-notice-card">
+    <button class="mac-close" onclick="closeMacNotice()">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 8.586l4.95-4.95a1 1 0 111.414 1.414L11.414 10l4.95 4.95a1 1 0 01-1.414 1.414L10 11.414l-4.95 4.95a1 1 0 01-1.414-1.414L8.586 10l-4.95-4.95A1 1 0 115.05 3.636L10 8.586z" clip-rule="evenodd"/></svg>
+    </button>
+    <div class="mac-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9 3a1 1 0 112 0v6.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3A1 1 0 016.293 8.293L7.586 9.586V3a1 1 0 112 0z"/><path d="M3 17a2 2 0 002 2h10a2 2 0 002-2v-2a1 1 0 10-2 0v2H5v-2a1 1 0 10-2 0v2z"/></svg>
+    </div>
+    <div class="mac-content">
+      <div class="mac-title">Good news Git users!</div>
+      <div class="mac-desc">Our Product Are Customizable!</div>
+      <div class="mac-actions">
+        <a href=".github.html" class="mac-btn mac-btn-primary">Try it free</a>
+        <a href="#" class="mac-btn mac-btn-secondary" onclick="closeMacNotice()">Not now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.mac-notice {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #3f4c6b 0%, #606c88 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  padding: 1rem 1.25rem 1rem 1rem;
+  max-width: 340px;
+  min-width: 300px;
+  z-index: 1000;
+  font-family: system-ui, sans-serif;
+}
+
+.mac-icon {
+  background: #153586;
+  border-radius: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.mac-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #fff;
+}
+
+.mac-content {
+  flex: 1;
+}
+
+.mac-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #fff;
+}
+
+.mac-desc {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 0.75rem;
+}
+
+.mac-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mac-btn {
+  padding: 0.35rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 0.93rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.mac-btn-primary {
+  background: #284385;
+  color: #fff;
+  border: 1px solid #284385;
+}
+
+.mac-btn-primary:hover {
+  background: #153586;
+}
+
+.mac-btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.mac-btn-secondary:hover {
+  background: #3f4c6b;
+}
+
+.mac-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.4rem;
+  transition: background 0.2s;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mac-close:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.mac-close svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.mac-notice-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(30, 41, 59, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background 0.3s;
+}
+
+/* Modal card styling */
+.mac-notice-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #3f4c6b 0%, #606c88 100%);
+  color: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  padding: 2rem 2.5rem 2rem 1.5rem;
+  max-width: 370px;
+  min-width: 320px;
+  font-family: system-ui, sans-serif;
+  animation: popIn 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.85); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.mac-icon {
+  background: #153586;
+  border-radius: 0.7rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.1rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(21,53,134,0.15);
+}
+
+.mac-icon svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  color: #fff;
+}
+
+.mac-content {
+  flex: 1;
+}
+
+.mac-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.mac-desc {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 1.1rem;
+}
+
+.mac-actions {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.mac-btn {
+  padding: 0.45rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+
+.mac-btn-primary {
+  background: #284385;
+  color: #fff;
+  border: 1px solid #284385;
+  box-shadow: 0 1px 4px rgba(40,67,133,0.08);
+}
+
+.mac-btn-primary:hover, .mac-btn-primary:focus {
+  background: #153586;
+  border-color: #153586;
+}
+
+.mac-btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.mac-btn-secondary:hover, .mac-btn-secondary:focus {
+  background: #3f4c6b;
+  color: #fff;
+  border-color: #fff;
+}
+
+.mac-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.4rem;
+  transition: background 0.2s;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mac-close:hover, .mac-close:focus {
+  background: rgba(255,255,255,0.10);
+}
+
+.mac-close svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.pl__arrows,
+.pl__ring-rotate,
+.pl__ring-stroke,
+.pl__tick {
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.pl__arrows {
+  animation-name: arrows42;
+  transform-origin: 16px 52px;
+}
+
+.pl__ring-rotate {
+  animation-name: ringRotate42;
+  transform-origin: 80px 80px;
+}
+
+.pl__ring-stroke {
+  animation-name: ringStroke42;
+  transform-origin: 80px 80px;
+  transform: rotate(-45deg);
+}
+
+.pl__tick {
+  animation-name: tick42;
+}
+
+.pl__tick:nth-child(2) { animation-delay: -1.75s; }
+.pl__tick:nth-child(3) { animation-delay: -1.5s; }
+.pl__tick:nth-child(4) { animation-delay: -1.25s; }
+.pl__tick:nth-child(5) { animation-delay: -1s; }
+.pl__tick:nth-child(6) { animation-delay: -0.75s; }
+.pl__tick:nth-child(7) { animation-delay: -0.5s; }
+.pl__tick:nth-child(8) { animation-delay: -0.25s; }
+
+@keyframes arrows42 {
+  from { transform: rotate(45deg); }
+  to { transform: rotate(405deg); }
+}
+
+@keyframes ringRotate42 {
+  from { transform: rotate(0); }
+  to { transform: rotate(720deg); }
+}
+
+@keyframes ringStroke42 {
+  from, to {
+    stroke-dashoffset: 452;
+    transform: rotate(-45deg);
+  }
+  50% {
+    stroke-dashoffset: 169.5;
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes tick42 {
+  from, 3%, 47%, to { stroke-dashoffset: -12; }
+  14%, 36% { stroke-dashoffset: 0; }
+}
+</style>
+
+<script>
+(function() {
+  window.onload = function() {
+    setTimeout(function() {
+      // Stop loader animation
+      document.querySelectorAll('.pl__arrows, .pl__ring-rotate, .pl__ring-stroke, .pl__tick').forEach(function(el) {
+        el.style.animation = 'none';
+      });
+      // Optionally, wait a tiny bit to see the stopped loader, then hide
+      setTimeout(function() {
+        document.getElementById('loaderOverlay').style.display = 'none';
+        document.getElementById('macNoticeOverlay').style.display = 'flex';
+      }, 100); // 100ms delay to ensure animation stops before hiding
+    }, 3000); // Changed to 3 seconds
+  };
+
+  window.closeMacNotice = function() {
+    document.getElementById('macNoticeOverlay').style.display = 'none';
+  };
+})();
+</script>
