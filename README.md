@@ -19,7 +19,7 @@
 
 ### Demo Screenshots
 
-![Portfolio Desktop Demo](./readme-images/image "Desktop Demo")
+![Portfolio Desktop Demo](./readme-images/image.png "Desktop Demo")
 
 ### Prerequisites
 
